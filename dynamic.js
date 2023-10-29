@@ -77,25 +77,28 @@ UserInput.addEventListener("click", function (e) {
   const Uservalue = UserText.value;
   e.preventDefault();
 
+  if (Uservalue === '') return;
+
   for (let i = 0; i < f1.length; i++) {
-    if (f1[i].includes(Uservalue)) Image.src = "Floor_1.png";
+    if (f1[i].includes(Uservalue)) {Image.src = "Floor_1.png"; document.getElementById("btn1").click(); }
   }
   for (let i = 0; i < f21.length; i++) {
-    if (f21[i].includes(Uservalue)) Image.src = "Floor_21.png";
+    if (f21[i].includes(Uservalue)) {Image.src = "Floor_21.png"; document.getElementById("btn21").click(); }
   }
   for (let i = 0; i < f22.length; i++) {
-    if (f22[i].includes(Uservalue)) Image.src = "Floor_22.png";
+    if (f22[i].includes(Uservalue)) {Image.src = "Floor_22.png"; document.getElementById("btn22").click(); }
   }
   for (let i = 0; i < f31.length; i++) {
-    if (f31[i].includes(Uservalue)) Image.src = "Floor_31.png";
+    if (f31[i].includes(Uservalue)) {Image.src = "Floor_31.png"; document.getElementById("btn31").click(); }
   }
   for (let i = 0; i < f32.length; i++) {
-    if (f32[i].includes(Uservalue)) Image.src = "Floor_32.png";
+    if (f32[i].includes(Uservalue)) {Image.src = "Floor_32.png"; document.getElementById("btn32").click(); }
   }
   for (let i = 0; i < f41.length; i++) {
-    if (f41[i].includes(Uservalue)) Image.src = "Floor_41.png";
+    if (f41[i].includes(Uservalue)) {Image.src = "Floor_41.png"; document.getElementById("btn41").click(); }
   }
   for (let i = 0; i < f42.length; i++) {
-    if (f42[i].includes(Uservalue)) Image.src = "Floor_42.png";
+    if (f42[i].includes(Uservalue)) {Image.src = "Floor_42.png"; document.getElementById("btn42").click(); }
   }
+  
 });
