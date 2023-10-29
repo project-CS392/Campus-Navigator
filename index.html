@@ -7,28 +7,25 @@
     <title>Campus Navigator</title>
   </head>
   <body>
-    <header style="margin: -22px -10px 50px -10px; background-color: #28a7e2">
-      <h1 style="text-align: center; color: white; padding-top: 25px" >خريطة الجامعة</h1>
+    <header>
+      <h1 style="text-align: center; color: white; padding-top: 25px; font-family: Tahoma;" >خريطة مبنى كلية الحاسب</h1>
       <img
         src="Imamm.png"
         alt="Sign Unveris"
-        width="5%"
-        style="margin-top: -75px; margin-left: 5px; padding-left: -75px; "
+        width="3.8%"
+        style="margin-top: -100px; margin-left: 15px; padding: 2px;"
       />
-      <!-- <h1 style="margin-top: -140px; text-align: right">تسجيل دخول</h1> -->
     </header>
 
 
     <div id="searchField">
       <form>
-        <input type="text" id="fname" placeholder="ابحث عن الغرفة"
-          
-        />
+        <input type="text" id="fname" placeholder="ابحث عن الغرفة"/>
         <button id="uscl">&#128270;</button>
       </form>
     </div>
 
-    <div style="margin-top: -90px; text-align: center ">
+    <div style="margin-top: -90px; text-align: center; width: 100%">
       <button class="button" id="btn42">الدور الرابع (نظم 2)</button>
       <button class="button" id="btn41">الدور الرابع (إدارة 1)</button>
       <button class="button" id="btn32">الدور الثالث (علوم 2)</button>
@@ -39,6 +36,14 @@
     </div>
 
     <style>
+      header {
+        height: 100px;
+        width: 100%;
+        margin: -22px -8px 50px -8px;
+        border-radius: 0px 0px 20px 20px;
+        background-color: #28a7e2
+      }
+
       #searchField {
         text-align: center;
       }
@@ -48,26 +53,23 @@
         border: 1;
         align-items: center;
         margin-bottom: 100px;
-        width: 800px;
+        width: 50%;
         outline: 0;
         padding: 15px 15px;
         border-radius: 50px;
         border-color: #28a7e2;
-    }
-
-    #uscl {
-      height: 50px;
-      width: 50px;
-      margin-left: 5px;
-      border: 3;
-      border-radius: 50px;
-      cursor: pointer;
-      border-color: #28a7e2;
-    }
-      .button:hover{
-        background: #28a7e2;
-        color: white;
       }
+
+      #uscl {
+        height: 50px;
+        width: 50px;
+        margin-left: 5px;
+        border: 3;
+        border-radius: 50px;
+        cursor: pointer;
+        border-color: #28a7e2;
+      }
+    
       .button{
         margin: 0px 5px 20px 0px;
         background: #ffffff;
@@ -81,11 +83,14 @@
         cursor: pointer;
         transition: background 0.5s;
       }
+      .button:hover{
+        background: #28a7e2!important;
+        color: white!important;
+      }
 
-      
     </style>
 
-    <div style="text-align: center"><img id="result" src="" alt="" /></div>
+    <div style="text-align: center"><img id="result" style="width: 60%;" src="" alt="" /></div>
     <script src="dynamic.js"></script>
   </body>
 </html>
